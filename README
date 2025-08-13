@@ -1,0 +1,43 @@
+# Project Setup Instructions
+
+## Clone the Project
+
+```bash
+git clone https://github.com/Aiwan01/specscart.git
+cd specscart
+```
+
+You will find two directories: `back-end` and `front-end`.
+
+## Install Dependencies
+
+Run the following command inside each directory:
+
+```bash
+npm install
+```
+
+## Running the Front-end
+
+To start the front-end server, run:
+
+```bash
+npm run dev
+```
+
+## Running the Back-end
+
+1. Create a PostgreSQL database named `specscart`.
+2. Update your PostgreSQL credentials in `config.json` inside the `back-end` directory.
+3. Start the back-end server:
+
+    ```bash
+    npm run dev
+    ```
+
+4. Seed the database:
+
+    ```bash
+    npx sequelize-cli db:seed:all
+    ```
+
